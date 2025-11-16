@@ -26,7 +26,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mo
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar cart = function cart() {\n  var cartBtn = document.querySelector('cart');\n  var cartModal = document.querySelector('.cart');\n  var cartCloseBtn = document.querySelector('.cart-close');\n  var openCart = function openCart() {\n    cartModal.style.display = 'flex';\n  };\n  var closeCart = function closeCart() {\n    cartModal.style.display = none;\n  };\n  cartBtn.addEventListener('click', openCart);\n  cartCloseBtn.addEventListener('click', closeCart);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cart);\n\n//# sourceURL=webpack://next-firebase-nov-2025/./src/modules/cart.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar cart = function cart() {\n  var cartBtn = document.querySelector('#cart');\n  var cartModal = document.querySelector('.cart');\n  var cartCloseBtn = document.querySelector('.cart-close');\n  var openCart = function openCart() {\n    cartModal.style.display = 'flex';\n  };\n  var closeCart = function closeCart() {\n    cartModal.style.display = '';\n  };\n  cartBtn.addEventListener('click', openCart);\n  cartCloseBtn.addEventListener('click', closeCart);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cart);\n\n//# sourceURL=webpack://next-firebase-nov-2025/./src/modules/cart.js?\n}");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar second = function second() {\n  var cartBtn = document.querySelectorById('cart');\n  console.log('cartBtn: ', cartBtn);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (second);\n\n//# sourceURL=webpack://next-firebase-nov-2025/./src/modules/second.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar second = function second() {\n  var cartBtn = document.querySelector('#cart');\n  console.log('cartBtn: ', cartBtn);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (second);\n\n//# sourceURL=webpack://next-firebase-nov-2025/./src/modules/second.js?\n}");
 
 /***/ })
 

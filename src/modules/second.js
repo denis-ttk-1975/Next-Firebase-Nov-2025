@@ -1,5 +1,5 @@
 const second = () => {
-  const cartBtn = document.querySelectorById('cart');
+  const cartBtn = document.querySelector('#cart');
   console.log('cartBtn: ', cartBtn);
 };
 
