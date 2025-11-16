@@ -1,0 +1,19 @@
+{
+  "name": "next-firebase-nov-2025",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Den U",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "babel-loader": "^9.2.1",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
