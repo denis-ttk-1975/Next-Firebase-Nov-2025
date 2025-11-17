@@ -1,6 +1,6 @@
 const postData = () => {
-  return fetch('https://next-firebase-glo-2025-default-rtdb.firebaseio.com/goods.json', {
-    method: 'POST',
+  return fetch('https://next-firebase-glo-2025-default-rtdb.firebaseio.com/goods/24.json', {
+    method: 'PUT',
     body: JSON.stringify({
       id: 24,
       title: 'Игра ДЕНИС (PS4 Sony)',
