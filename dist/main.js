@@ -30,13 +30,33 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 
 /***/ }),
 
+/***/ "./src/modules/getData.js":
+/*!********************************!*\
+  !*** ./src/modules/getData.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar getData = function getData() {\n  return fetch('https://next-firebase-glo-2025-default-rtdb.firebaseio.com/goods.json').then(function (response) {\n    return response.json();\n  });\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getData);\n\n//# sourceURL=webpack://next-firebase-nov-2025/./src/modules/getData.js?\n}");
+
+/***/ }),
+
+/***/ "./src/modules/postData.js":
+/*!*********************************!*\
+  !*** ./src/modules/postData.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar postData = function postData() {\n  return fetch('https://next-firebase-glo-2025-default-rtdb.firebaseio.com/goods.json', {\n    method: 'POST',\n    body: JSON.stringify({\n      id: 24,\n      title: 'Игра ДЕНИС (PS4 Sony)',\n      price: 23322332,\n      sale: true,\n      img: 'https://cdn1.ozone.ru/multimedia/c400/1023547851.jpg',\n      category: 'Игры и софт'\n    }),\n    headers: {\n      'Content-type': 'application/json; charset=UTF-8'\n    }\n  }).then(function (response) {\n    return response.json();\n  });\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (postData);\n\n//# sourceURL=webpack://next-firebase-nov-2025/./src/modules/postData.js?\n}");
+
+/***/ }),
+
 /***/ "./src/modules/second.js":
 /*!*******************************!*\
   !*** ./src/modules/second.js ***!
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar second = function second() {\n  var cartBtn = document.querySelector('#cart');\n  console.log('cartBtn: ', cartBtn);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (second);\n\n//# sourceURL=webpack://next-firebase-nov-2025/./src/modules/second.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _getData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getData */ \"./src/modules/getData.js\");\n/* harmony import */ var _postData__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./postData */ \"./src/modules/postData.js\");\n\n\nvar second = function second() {\n  var cartBtn = document.querySelector('#cart');\n  console.log('cartBtn: ', cartBtn);\n  (0,_getData__WEBPACK_IMPORTED_MODULE_0__[\"default\"])().then(function (data) {\n    return console.log(data);\n  });\n  cartBtn.addEventListener('click', function () {\n    (0,_postData__WEBPACK_IMPORTED_MODULE_1__[\"default\"])().then(function (data) {\n      return console.log(data);\n    });\n    (0,_getData__WEBPACK_IMPORTED_MODULE_0__[\"default\"])().then(function (data) {\n      return console.log(data);\n    });\n  });\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (second);\n\n//# sourceURL=webpack://next-firebase-nov-2025/./src/modules/second.js?\n}");
 
 /***/ })
 
